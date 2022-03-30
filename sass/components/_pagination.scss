@@ -1,0 +1,29 @@
+.pagination{
+    margin: 15px 30px;
+    .page-item{
+        margin: 2px;
+        border-radius: 4px;
+        &.icon{
+            background-color: #F4F5F8;
+        }
+        &.active{
+            background-color: #2B308E;
+            .page-link{
+                color: #fff !important;
+            }
+        }
+        .page-link{
+            border: none;
+            color: #575962;
+            background-color: transparent;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+            span{
+                color: #2B308E;
+                opacity: 0.3;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.search-bar-wrap{
+    position: relative;
+    .search-icon{
+        position: absolute;
+        left: 20px;
+        top: 9px;
+        font-weight: 100;
+        font-size: 12px;
+        color: #A2A5B9;
+    }
+    .custom-search-bar{
+        border: 1px solid #685CB6;
+        border-radius: 4px; 
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 25px;
+        &:focus-visible{
+            outline: 1px solid #685CB6 !important;
+        }
+        &::placeholder{
+            color: #A2A5B9;
+        }
+    }
+}

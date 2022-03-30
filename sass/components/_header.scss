@@ -1,0 +1,54 @@
+header{
+    width:100%;
+    background-color: #fff;
+    height: 140px;
+    margin-left: auto;
+    box-shadow: 0px 1px 15px #45414E1A;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    .page-heading{
+        color: #2B308E;
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+        font-family: 'latobold';
+    }
+    .add-new-fields-wrapper{
+        display: flex;
+        align-items: center;
+        &.show{
+          .add-fields-btn{
+                transform: rotate(45deg);
+            }
+            .create-fields{
+                visibility: visible;
+                display: flex;
+            }
+        }
+        .create-fields{
+            display: none;
+            padding: 0 30px;
+            align-items: center;
+            transition: all 0.3s;
+            .field-item{
+                margin-right: 60px;
+                h6{
+                    font-family: 'latobold';
+                    margin-bottom: 0;
+                    span
+                    {   padding: 8px 10px;
+                        height: 44px;
+                        width: 44px;
+                        border-radius: 50%;
+                        background-color: #2B308E;
+                        color: #fff;
+                        font-size: 24px;
+                        display: inline-block;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
